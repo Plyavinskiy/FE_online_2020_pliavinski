@@ -1,0 +1,147 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.modal-header {
+  padding: 15px 25px;
+  background-color: #948f89;
+  color: white;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.modal-body {
+  .group {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+
+    span {
+      flex: 0 1 100px;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+
+    .field {
+      flex: 1 1;
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+  }
+}
+
+.modal-footer {
+  background-color: #948f89;
+  color: #fff;
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-between;
+}
+
+button {
+  flex: 0 0 200px;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #657698;
+    color: #fff;
+  }
+}
+
+.success {
+  display: none;
+  text-align: center;
+  background: white;
+  margin: auto;
+  padding: 50px 100px;
+  max-width: 600px;
+  color: rgb(19, 212, 106);
+}
+
+#close-success {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #bb4343;
+    color: #fff;
+  }
+}

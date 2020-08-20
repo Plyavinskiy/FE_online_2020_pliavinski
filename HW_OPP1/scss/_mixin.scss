@@ -1,0 +1,13 @@
+/* mixins */
+@mixin pink-panel() {
+  background-color: $pink;
+  border-radius: 5px;
+}
+
+@mixin post-column() {
+  @include make-col-ready();
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }
+}
