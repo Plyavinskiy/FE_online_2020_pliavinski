@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<div id="modalForm" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Adding a new post</h2>
+    </div>
+    <div class="modal-body">
+      <form id="form" action="form-add-new-post">
+        <div class="group">
+          <span>Type of post:</span>
+          <select class="field" name="type" id="type" required>
+            <option value="text">text</option>
+            <option value="video">video</option>
+            <option value="melody">melody</option>
+            <option value="picture">picture</option>
+          </select>
+        </div>
+        <div class="group">
+          <span>File url:</span>
+          <input class="field" type="text" name="file">
+        </div>
+        <div class="group">
+          <span>Title:</span>
+          <input class="field" type="text" name="title" required>
+        </div>
+        <div class="group">
+          <span>Author:</span>
+          <input class="field" type="text" name="author" pattern=".{3,}" required>
+        </div>
+        <div class="group">
+          <span>Date:</span>
+          <input class="field" type="date" name="date" required>
+        </div>
+        <div class="group">
+          <span>Time:</span>
+          <input class="field" type="number" name="time" required>
+        </div>
+        <div class="group">
+          <span>Description:</span>
+          <input class="field" type="text" name="description" pattern=".{3,}" required>
+        </div>
+        <div class="group">
+          <span>Quote:</span>
+          <textarea class="field" rows="5" name="quote" pattern=".{3,}" required></textarea>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <button form="form" type="reset">Reset</button>
+        <button form="form" type="submit">Save post</button>
+      </div>
+    </div>
+  </div>
+  <div id="success" class="success">
+    <h2>Post successfully added</h2>
+    <p>now you are redirected to the post page</p>
+    <button id="closeSuccess">CLOSE</button>
+  </div>
+  <div id="valid" class="invalid">
+    <h2 id="validText">Title</h2>
+    <h3>Please write fine valid Title</h3>
+    <button id="closeValid">CLOSE</button>
+  </div>
+</div>

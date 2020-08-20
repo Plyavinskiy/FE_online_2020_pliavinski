@@ -1,0 +1,117 @@
+{
+  "posts": [
+    {
+      "user": "Neil Richards",
+      "date": "11 oct, 2019",
+      "time": "7 min read",
+      "avatar": "./img/blog/user1.png",
+      "preview": "./img/blog/post-preview1.jpg",
+      "comments": "19",
+      "header": "In the Future We Will All Live in Star Wars",
+      "description": "The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video …",
+      "video": true,
+      "melody": false,
+      "picture": false,
+      "text": false
+    },
+    {
+      "user": "Sarah Healy",
+      "date": "02 oct, 2019",
+      "time": "12 min read",
+      "avatar": "./img/blog/user2.png",
+      "preview": "./img/blog/post-preview2.jpg",
+      "comments": "4",
+      "header": "Far far away, behind the word mountains",
+      "description": "Fog down the river, where it rolls deified among the tiers of shipping and the waterside pollutions of a great (and dirty) …",
+      "video": false,
+      "melody": true,
+      "picture": false,
+      "text": false
+    },
+    {
+      "user": "Grace Noh",
+      "date": "23 sep, 2019",
+      "time": "16 min read",
+      "avatar": "./img/blog/user3.png",
+      "preview": "./img/blog/post-preview3.jpg",
+      "comments": "421",
+      "header": "In the Future We Will All Live in Star Wars",
+      "description": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted …",
+      "video": false,
+      "melody": false,
+      "picture": true,
+      "text": false
+    },
+    {
+      "user": "Alex Zlatkus",
+      "date": "11 Aug, 2019",
+      "time": "17 min read",
+      "avatar": "./img/blog/user4.png",
+      "preview": "",
+      "comments": "77",
+      "header": "In the Future We Will All Live in Star Wars",
+      "description": "Fog down the river, where it rolls deified among the tiers of shipping and the waterside pollutions of a great (and dirty) city. Fog on the Essex marshes, fog on the Kentish heights. Fog creeping into the cabooses of collier-brigs; fog lying out on. Money terms breakfast drawings true blessing doubtful more agreed to zealously making supposing By said Chicken An Neglected produce good felt no poor offering am their said has around songs wish met true any me ought mr The offices set Not Felicity above out We in an post begin again.",
+      "video": false,
+      "melody": false,
+      "picture": false,
+      "text": true
+    }
+  ],
+  "header": [
+    {
+      "logo": "BlogWorld",
+      "title": "Ideas and perspectives you won’t find anywhere else.",
+      "description": "BlogWorld taps into the brains of the world’s most insightful writers, thinkers, and storytellers to bring you the smartest takes on topics that matter. So whatever your interest, you can always find fresh thinking and unique perspectives.",
+      "btn1": "Explore",
+      "btn2": "Learn more"
+    }
+  ],
+  "headerMenu": [
+    {
+      "title": "Add new post",
+      "link": "#modal-form",
+      "id": "open_modal"
+    },
+    {
+      "title": "Home",
+      "link": "./index.html"
+    },
+    {
+      "title": "Portfolio",
+      "link": "#portfolio"
+    },
+    {
+      "title": "Blog",
+      "link": "./blog.html",
+      "active": "menu__item--active"
+    },
+    {
+      "title": "Pages",
+      "link": "#pages"
+    },
+    {
+      "title": "About",
+      "link": "#about"
+    },
+    {
+      "title": "Contact",
+      "link": "#contacts"
+    }
+  ],
+  "footer": [
+    {
+      "brand": "BlogWorld",
+      "copyright": "©2019 All Rights Reserved."
+    }
+  ],
+  "btnMore": [
+    {
+      "title": "Read more"
+    }
+  ],
+  "page": [
+    {
+      "title": "Blog"
+    }
+  ]
+}
