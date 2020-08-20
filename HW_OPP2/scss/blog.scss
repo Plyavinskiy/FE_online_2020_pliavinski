@@ -1,0 +1,226 @@
+@import 'main';
+
+.blog {
+  margin-bottom: 67px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 67px 0 72px;
+    text-align: center;
+  }
+
+  &__more-wrap {
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  &__more {
+    @extend %btn;
+  }
+}
+
+.post {
+  @include pink-panel();
+
+  position: relative;
+  margin-bottom: 50px;
+
+  &__video-container {
+    @include post-column();
+  }
+
+  &__audio-container {
+    @include post-column();
+  }
+
+  &__picture-container {
+    @include post-column();
+  }
+
+  &__description-container {
+    @include post-column();
+  }
+
+  &__preview {
+    display: block;
+  }
+
+  &__video {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__preview-image {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  &__content {
+    padding: 26px 95px 38px 0;
+    position: relative;
+  }
+
+  &__details {
+    color: $secondary-color;
+    font-size: 15px;
+    margin-bottom: 33px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: 195px 173px;
+      background-image: url('../img/sprite.svg');
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      width: 78px;
+      height: 70px;
+      border: 1px solid $white;
+      border-radius: 5px;
+    }
+  }
+
+  &__user {
+    display: block;
+    float: left;
+    margin-right: 13px;
+  }
+
+  &__user-image {
+    display: block;
+    border-radius: 50%;
+  }
+
+  &__user-name {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  &__header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    line-height: 1.55em;
+    margin-bottom: 31px;
+  }
+
+  &__audio {
+    height: 45px;
+    width: 250px;
+  }
+
+  &__button {
+    @extend %btn;
+
+    transition: 0.2s;
+  }
+
+  &.post--video {
+    .post__preview {
+      .post__preview-image {
+        width: 100%;
+        display: block;
+      }
+
+      &::before {
+        content: '';
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -36px;
+        margin-left: -36px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -16px;
+        margin-left: -9px;
+        border-left: 25px solid $white;
+        border-top: 17px solid transparent;
+        border-bottom: 17px solid transparent;
+      }
+    }
+
+    .post__details {
+      &::after {
+        background-position: 0 -65px;
+      }
+    }
+  }
+
+  &.post--picture {
+    .post__details {
+      &::after {
+        background-position: -40px -65px;
+      }
+    }
+  }
+
+  &.post--melody {
+    .post__details {
+      &::after {
+        background-position: -80px -65px;
+      }
+    }
+  }
+
+  &.post--text {
+    padding-left: 27px;
+
+    .post__details {
+      &::after {
+        background-position: -120px -65px;
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 80px;
+    bottom: 0;
+    right: 80px;
+    left: 80px;
+    box-shadow: 0 2px 20px 7px rgba(131, 131, 131, 0);
+    transition: 0.3s;
+  }
+
+  &:hover {
+    &::before {
+      box-shadow: 0 2px 20px 7px rgba(131, 131, 131, 0.5);
+    }
+  }
+}
