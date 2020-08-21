@@ -1,0 +1,29 @@
+{
+  "name": "node.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "formidable": "^1.2.2",
+    "g": "^2.0.1",
+    "nconf": "^0.10.0",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7",
+    "q": "^1.5.1",
+    "swagger-ui-express": "^3.0.10",
+    "winston": "^2.4.2",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "mongoose": "^5.8.10",
+    "uuid": "^3.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

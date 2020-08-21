@@ -1,0 +1,180 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: ''
+info:
+  description: This is a simple API
+  version: "1.0.0"
+  title: Simple Inventory API
+  contact:
+    email: you@your-company.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: Articles
+    description: Some list
+paths:
+  /api/list:
+    get:
+      tags:
+        - Articles
+      summary: getting articles
+      operationId: getArticles
+      description: get all articles list
+      responses:
+        '200':
+          description: getting all results
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+    delete:
+      tags:
+        - Articles
+      summary: delete articles
+      operationId: deleteArticle
+      description: delete all articles list
+      responses:
+        '200':
+          description: all articles deleted
+        '400':
+          description: bad input parameter
+  /api/list/{id}:
+    get:
+      tags:
+        - Articles
+      summary: searches article by id
+      operationId: searchArticleByID
+      parameters:
+       - name: id
+         in: path
+         description: ID of article to return
+         required: true
+         schema:
+            type: integer
+            format: int64
+      description: search article by ID
+      responses:
+        '200':
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+        '400':
+          description: bad input parameter
+    put:
+      tags:
+        - Articles
+      summary: updates article by id
+      operationId: updateArticleByID
+      parameters:
+       - name: id
+         in: path
+         description: ID of article to update
+         required: true
+         schema:
+            type: integer
+            format: int64
+      description: update article by ID
+      responses:
+        '200':
+          description: update this articles
+        '400':
+          description: bad input parameter
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Article'
+        description: update article by ID
+    delete:
+      tags:
+        - Articles
+      summary: deleted article by id
+      operationId: deleteArticleByID
+      parameters:
+       - name: id
+         in: path
+         description: ID of article to return
+         required: true
+         schema:
+            type: integer
+            format: int64
+      description: delete article by ID
+      responses:
+        '200':
+          description: delete success
+        '400':
+          description: bad input parameter      
+  /api/create-article:
+    post:
+      tags:
+        - Articles
+      summary: add new article
+      operationId: addArticle
+      description: Add new article
+      responses:
+        '201':
+          description: item created
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Article'
+        description: Article to add
+components:
+  schemas:
+    Article:
+      type: object
+      required:
+        - id
+        - user
+      properties:
+        id:
+          type: number
+          example: 1
+        user:
+          type: string
+          example: "Neil Richards"
+        date:
+          type: string
+          example: "11 oct, 2019"
+        time:
+          type: string
+          example: "7 min read"
+        avatar:
+          type: string
+          example: "./img/blog/user1.png"
+        comments:
+          type: number
+          example: 45
+        rating:
+          type: number
+          example: 4.5
+        header:
+          type: string
+          example: "In the Future We Will All Live in Star Wars"
+        description:
+          type: string
+          example: "The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video …"
+        video:
+          type: boolean
+          example: true
+        melody:
+          type: boolean
+          example: false
+        picture:
+          type: boolean
+          example: false
+        text:
+          type: boolean
+          example: false
