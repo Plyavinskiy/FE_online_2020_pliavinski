@@ -1,0 +1,266 @@
+@import 'bootstrap/bootstrap-grid', 'typography', 'mixin', 'reset', 'variables', 'color-matrix', 'extend', 'modal';
+html{
+  height: 100%;
+}
+body {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: $primary-color;
+  position: relative;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title-decoration {
+  @extend %title-underline;
+}
+
+.header {
+  &__logo-wrap {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(2);
+    }
+  }
+
+  &__logo {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 28px;
+    display: block;
+    padding: 25px 10px 10px 0;
+    float: left;
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  &__menu-wrap {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(10);
+    }
+  }
+
+  .menu {
+    float: right;
+    padding-top: 17px;
+
+    &__item {
+      list-style: none;
+      float: left;
+      margin-left: 19px;
+      text-align: center;
+      min-width: 62px;
+
+      .menu__link {
+        display: block;
+        padding: 10px 0;
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 15px;
+
+        &:hover {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+
+        &:active {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+
+      &.menu__item--active {
+        .menu__link {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.socials {
+  padding: 25px 0 8px;
+
+  &__link {
+    display: inline-block;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    .socials__icon {
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-image: url('../img/sprite.svg');
+      background-size: 195px 173px;
+
+      &.socials__icon--facebook {
+        background-position: 0 -105px;
+      }
+
+      &.socials__icon--instagram {
+        background-position: -48px -105px;
+      }
+
+      &.socials__icon--dribbble {
+        background-position: -24px -105px;
+      }
+    }
+
+    & + .socials__link {
+      margin-left: 16px;
+    }
+  }
+}
+
+.footer {
+  border-top: 1px solid $silver;
+  background-color: #f8f8f8;
+  padding: 23px 0 15px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 27px;
+  position: relative;
+  margin-top: auto;
+
+  &__column {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }
+
+  &__socials {
+    text-align: left;
+    padding: 0;
+  }
+
+  &__copyright {
+    text-align: right;
+    font-size: 15px;
+  }
+
+  &__go-top {
+    position: absolute;
+    top: -61px;
+    right: 15px;
+
+    @extend %btn;
+  }
+}
+
+.rating {
+  font-size: 0;
+  margin-left: 5px;
+
+  &__star {
+    display: inline-block;
+    vertical-align: sub;
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+    background-size: 195px 173px;
+    background-image: url('../img/sprite.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -160px;
+
+    &.rating__star--full {
+      background-position: -28px -160px;
+    }
+
+    &.rating__star--half {
+      background-position: -14px -160px;
+    }
+  }
+}
+
+.search {
+  position: relative;
+  text-align: right;
+  margin-bottom: 30px;
+
+  &__input {
+    height: 45px;
+    width: 320px;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    padding: 10px 50px 10px 10px;
+    letter-spacing: 0.05em;
+    font-family: "Hind Siliguri", sans-serif;
+  }
+
+  &__btn {
+    height: 43px;
+    width: 43px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 17px;
+      height: 17px;
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+      position: absolute;
+      top: 12px;
+      left: 9px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 8px;
+      background-color: $primary-color;
+      position: absolute;
+      top: 25px;
+      left: 26px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.post-info {
+  color: $secondary-color;
+  font-size: 15px;
+
+  &__divider {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 3px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    margin: 0 7px;
+  }
+
+  &__comments {
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 14px;
+      height: 13px;
+      margin-right: 5px;
+      background-size: 195px 173px;
+      background-image: url('../img/sprite.svg');
+      background-position: -14px -146px;
+      background-repeat: no-repeat;
+    }
+  }
+}

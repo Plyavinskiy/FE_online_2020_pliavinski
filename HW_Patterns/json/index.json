@@ -1,0 +1,205 @@
+{
+  "posts": [
+    {
+      "title": "In the Future We Will All Live in Star Wars",
+      "description": "The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video…",
+      "preview": "./img/post-1.jpg",
+      "date": "20 oct, 2019",
+      "time": "10 min read",
+      "comments": "11"
+    },
+    {
+      "title": "Rubik’s Cube? No, Robotics and AI are…",
+      "description": "In other words, I will try to de-hype the crowd about the recent development in robotics. Concretely, OpenAI has claimed some pretty amazing results with learning to solve the Rubik’s cube with a robotic hand…",
+      "preview": "./img/post-2.jpg",
+      "date": "11 oct, 2019",
+      "time": "7 min read",
+      "comments": "19"
+    },
+    {
+      "title": "How the Internet of Things will Transfo…",
+      "description": "The Internet of Things (IoT) promises to be the most important technological development for consumers since the advent of the smartphone. Experts believe that this collection of internet-connected technolog…",
+      "preview": "./img/post-3.jpg",
+      "date": "28 sep, 2019",
+      "time": "16 min read",
+      "comments": "41"
+    }
+  ],
+  "aboutNav": [
+    {
+      "title": "Typography",
+      "typography": true,
+      "iconset": false,
+      "accurate": false,
+      "green": true,
+      "blue": false,
+      "red": false,
+      "right": true,
+      "left": false
+    },
+    {
+      "title": "Icon set",
+      "typography": false,
+      "iconset": true,
+      "accurate": false,
+      "green": false,
+      "blue": true,
+      "red": false,
+      "right": false,
+      "left": true
+    },
+    {
+      "title": "Accurate",
+      "typography": false,
+      "iconset": false,
+      "accurate": true,
+      "green": false,
+      "blue": false,
+      "red": true,
+      "right": true,
+      "left": false
+    }
+  ],
+  "videos": [
+    {
+      "videosrc": "./img/video-preview.jpg"
+    }
+  ],
+  "about": [
+    {
+      "title": "About us",
+      "subtitle": "This is who we are - or at least who we strive to be…"
+    }
+  ],
+  "blog": [
+    {
+      "title": "Latest posts",
+      "subtitle": "Information is a source of learning. But unless it is organized, processed and available to the right people"
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Latest portfolio",
+      "subtitle": "Put there articles successfully special warrant submit agree what along then"
+    }
+  ],
+  "testimonials": [
+    {
+      "title": "Testimonials"
+    }
+  ],
+  "testimonialsSlider": [
+    {
+      "text": "We move at a fast pace. I’m always working on something. I am excited about it!",
+      "name": "Martin Oda",
+      "position": "Product desgner",
+      "slide": "./img/user.jpg"
+    }
+  ],
+  "portfolioSlider": [
+    {
+      "header": "ART OCEAN",
+      "subheader": "Photography, art, nature",
+      "slide": "./img/slide1.jpg"
+    },
+    {
+      "header": "CITY GUIDE",
+      "subheader": "Photography, city, way",
+      "slide": "./img/slide2.jpg"
+    },
+    {
+      "header": "MOUNTAINS",
+      "subheader": "Art, hiking",
+      "slide": "./img/slide3.jpg"
+    },
+    {
+      "header": "PLANETS",
+      "subheader": "Photography, art, coordinates",
+      "slide": "./img/slide4.jpg"
+    },
+    {
+      "header": "ZODIAC SIGNS",
+      "subheader": "Photography, art, coordinates",
+      "slide": "./img/slide5.jpg"
+    }
+  ],
+  "contacts": [
+    {
+      "title": "Contact us",
+      "description": "Put there articles successfully special warrant submit agree what along then"
+    }
+  ],
+  "map": [
+    {
+      "title": "What will be next step?",
+      "header_1": "1. We’ll prepare a proposal",
+      "header_2": "2. Together we discuss it",
+      "header_3": "3. Let’s start building",
+      "description_header1": "Required scope, timeline and apr. price will be included if you provide us with detail information about a project.",
+      "description_header2": "Let’s get acquainted and discuss all the possible variant and options. Google Hangouts or Skype usually wirks great.",
+      "description_header3": "When the contract is signed and all goals are set we can start the first sprint.",
+      "description": "Write us a few words about your project and we will prepare proposal for you within 24 hours",
+      "form_info": "If you need to have a DNA first, just contact us at",
+      "label1": "Your name",
+      "label2": "Email",
+      "label3": "email@gmail.com ",
+      "placeholder1": "Enter your name",
+      "placeholder2": "Enter your email",
+      "placeholder3": "Enter your password",
+      "password": "Password",
+      "map": "./img/map.jpg",
+      "btn": "Send message"
+    }
+  ],
+  "footer": [
+    {
+      "brand": "BlogWorld",
+      "copyright": "©2019 All Rights Reserved."
+    }
+  ],
+  "header": [
+    {
+      "logo": "BlogWorld",
+      "title": "Ideas and perspectives you won’t find anywhere else.",
+      "description": "BlogWorld taps into the brains of the world’s most insightful writers, thinkers, and storytellers to bring you the smartest takes on topics that matter. So whatever your interest, you can always find fresh thinking and unique perspectives.",
+      "btn1": "Explore",
+      "btn2": "Learn more"
+    }
+  ],
+  "headerMenu": [
+    {
+      "title": "Add new post",
+      "link": "#modal-form",
+      "id": "open_modal"
+    },
+    {
+      "title": "Home",
+      "link": "#top",
+      "active": "menu__item--active"
+    },
+    {
+      "title": "Portfolio",
+      "link": "#portfolio"
+    },
+    {
+      "title": "Blog",
+      "link": "./blog.html"
+    },
+    {
+      "title": "Sorting",
+      "link": "./sorting.html"
+    },
+    {
+      "title": "Pages",
+      "link": "#pages"
+    },
+    {
+      "title": "About",
+      "link": "#about"
+    },
+    {
+      "title": "Contact",
+      "link": "#contacts"
+    }
+  ]
+}

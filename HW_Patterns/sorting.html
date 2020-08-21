@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./css/blog.css">
+  <style>
+    .list button.selected,
+    .sublist button.selected {
+      background-color: #657698;
+      color: #fff;
+    }
+
+    .authors__horizontal .list li {
+      display: inline-block;
+    }
+
+    .authors__horizontal {
+      width: 80%;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .authors__horizontal .list li {
+      margin: 0 5px;
+    }
+
+    .authors__verticals {
+      width: 95%;
+      margin: auto;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      margin-bottom: 200px;
+    }
+
+    .authors__verticals h3 {
+      width: 200px;
+      text-align: center;
+    }
+
+    .authors__verticals .list {
+      list-style: none;
+      width: 200px;
+      text-align: center;
+    }
+
+    .authors__horizontal .list {
+      list-style: none;
+    }
+
+    .authors__verticals .list li {
+      margin: 5px 0;
+    }
+
+    .sublist {
+      padding: 10px 0;
+      list-style: none;
+    }
+
+    .authors__horizontal .sublist li {
+      display: inline-block;
+    }
+
+    .sublist li button {
+      padding: 2px 10px;
+      margin: 0 5px;
+      font-size: 16px;
+    }
+
+  </style>
+  <title>HW_Patterns - Sorting page</title>
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <header class="header" id="top">
+        <div class="row">
+          <div class="header__logo-wrap"><a class="header__logo" href="#">BlogWorld</a></div>
+          <div class="header__menu-wrap">
+            <ul class="menu">
+              <li class="menu__item undefined"><a class="menu__link" href="#modal-form" id="open_modal">Add new post</a>
+              </li>
+              <li class="menu__item undefined"><a class="menu__link" href="./index.html">Home</a></li>
+              <li class="menu__item undefined"><a class="menu__link" href="#portfolio">Portfolio</a></li>
+              <li class="menu__item undefined"><a class="menu__link" href="./blog.html">Blog</a></li>
+              <li class="menu__item menu__item--active"><a class="menu__link" href="./sorting.html">Sorting</a></li>
+              <li class="menu__item undefined"><a class="menu__link" href="#pages">Pages</a></li>
+              <li class="menu__item undefined"><a class="menu__link" href="#about">About</a></li>
+              <li class="menu__item undefined"><a class="menu__link" href="#contacts">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+  <section class="sorting">
+    <div class="authors__horizontal">
+      <h3>Authors</h3>
+      <ul class="list"></ul>
+      <h5>Articles</h5>
+      <ul class="sublist"></ul>
+    </div>
+    <div class="main">
+      <aside class="authors__verticals">
+        <h3>Authors</h3>
+        <ul class="list"></ul>
+        <h5>Articles</h5>
+        <ul class="sublist"></ul>
+      </aside>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer__column">
+          <div class="footer__socials socials"><a class="socials__link" href="#" target="_blank" rel="noopener">
+              <div class="socials__icon socials__icon--facebook"></div>
+            </a><a class="socials__link" href="#" target="_blank" rel="noopener">
+              <div class="socials__icon socials__icon--instagram"></div>
+            </a><a class="socials__link" href="#" target="_blank" rel="noopener">
+              <div class="socials__icon socials__icon--dribbble"></div>
+            </a></div>
+        </div>
+        <div class="footer__column"><strong class="footer__brand">BlogWorld</strong></div>
+        <div class="footer__column">
+          <div class="footer__copyright">©2019 All Rights Reserved.</div>
+        </div>
+      </div>
+    </div><a class="footer__go-top btn-inverse" href="#top">Scroll to top</a>
+  </footer>
+  <script src="./js/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./js/jquery/jquery.modal.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_NgZ7gTjPrJBUjT3eIcPLjkHaw2Enysc"></script>
+  <script src="./js/blog/post_classes.js"></script>
+  <script src="./js/sorting/search_posts.js"></script>
+  <script src="./js/sorting/sorting.js"></script>
+  <script src="./js/modal_form.js"></script>
+</body>
+</html>
